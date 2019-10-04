@@ -24,13 +24,41 @@
 
 .bt--step1 {
   background: #FF4E50;
+  border: 2px solid #FF4E50;
   padding: 4px 14px 4px 14px;
 }
 
 .step {
-  color: #000;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+.step .card-img-overlay .bt--step1 {
+  margin: 44px 0px 15px;
+}
+.step .card-img-overlay .step-title {
+  width: 250px;
+  height: 58px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.step .card-img-overlay .step-text {
+  width: 250px;
+  height: 57px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  color: #E3E3E3;
 }
 
 body {
@@ -41,7 +69,10 @@ body {
 }
 
 .header {
-  background: url("image/Background.png");
+  background-image: url("image/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   mix-blend-mode: normal;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -70,13 +101,14 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  margin-top: 97px;
+  margin-top: 94px;
 }
 .header .header_body .holiday {
+  width: 272px;
   font-weight: bold;
   font-size: 30px;
   line-height: 37px;
-  margin: 10px 24px 6px 24px;
+  margin: 10px 0px 6px 0px;
 }
 .header .header_body .partner {
   width: 280px;
@@ -84,17 +116,110 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  margin: 0px 20px 0px 20px;
 }
 .header .header_body .bt--header_body {
-  margin: 15px 20px 149px 20px;
+  margin-bottom: 150px;
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 575px) {
   .header {
-    background: #eeeeee;
+    background-image: url("image/Background-md.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header .header_head {
+    position: relative;
+  }
+  .header .header_head a {
+    position: absolute;
+    top: 50px;
+    right: 160px;
+    margin-right: 0px;
+  }
+  .header .header_head .bt {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+  }
+  .header .header_body {
+    margin: 204px;
+  }
+  .header .header_body .dreamshare {
+    position: absolute;
+    top: 46px;
+    left: 48px;
+    margin-top: 0px;
+  }
+  .header .header_body .holiday {
+    width: 470px;
+    font-size: 52px;
+    line-height: 63px;
+    margin: 0px 0px 28.5px 0px;
+  }
+  .header .header_body .partner {
+    color: #F7F3F2;
+    width: 405px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+  .header .header_body .bt--header_body {
+    width: 270px;
+    margin-bottom: 224px;
   }
 }
+@media screen and (min-width: 780px) {
+  .header {
+    background-image: url("image/Background-xl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .header .header_head {
+    position: relative;
+  }
+  .header .header_head a {
+    position: absolute;
+    top: 50px;
+    right: 400px;
+  }
+  .header .header_head .bt {
+    position: absolute;
+    top: 40px;
+    right: 290px;
+  }
+  .header .header_body {
+    margin: 204px;
+  }
+  .header .header_body .dreamshare {
+    position: absolute;
+    top: 46px;
+    left: 248px;
+    margin-top: 0px;
+  }
+}
+.step_menu {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  margin: 34px 10px 0px 10px;
+}
+.step_menu .title {
+  color: #444444;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  align-items: flex-end;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.step_menu .step {
+  margin-bottom: 10px;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

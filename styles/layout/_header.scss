@@ -1,6 +1,9 @@
 
 .header{
-    background: url('image/Background.png');
+    background-image: url('image/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     mix-blend-mode: normal;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -27,13 +30,14 @@
             font-weight: bold;
             font-size: 20px;
             line-height: 24px;
-            margin-top: 97px;
+            margin-top: 94px;
         }
         .holiday{
+            width: 272px;
             font-weight: bold;
             font-size: 30px;
             line-height: 37px;
-            margin: 10px 24px 6px 24px;
+            margin: 10px 0px 6px 0px;
         }
         .partner{
             width: 280px;
@@ -41,16 +45,92 @@
             font-weight: 300;
             font-size: 18px;
             line-height: 24px;
-            margin: 0px 20px 0px 20px;
         }
         .bt--header_body{
-            margin: 15px 20px 149px 20px;
+            margin-bottom: 150px;
         }
     }
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 575px) {
     .header {
-        background: #eeeeee;
+        background-image: url('image/Background-md.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .header_head{
+            position: relative;
+            a{
+                position: absolute;
+                top: 50px;
+                right: 160px;
+                margin-right: 0px;
+            }
+            .bt{
+                position: absolute;
+                top: 40px;
+                right: 50px;
+            }
+        }
+        .header_body{
+            margin: 204px;
+            .dreamshare{
+                position: absolute;
+                top:46px;
+                left: 48px;
+                margin-top: 0px;
+            }
+            .holiday{
+                width: 470px;
+                font-size: 52px;
+                line-height: 63px;
+                margin: 0px 0px 28.5px 0px;
+            }
+            .partner{
+                color: #F7F3F2;
+                width: 405px;
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: 33px;
+            }
+            .bt--header_body{
+                width: 270px;
+                margin-bottom: 224px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 780px) {
+    .header {
+        background-image: url('image/Background-xl.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .header {
+        .header_head{
+            position: relative;
+            a{
+                position: absolute;
+                top: 50px;
+                right: 400px;
+            }
+            .bt{
+                position: absolute;
+                top: 40px;
+                right: 290px;
+            }
+        }
+        .header_body{
+            margin: 204px;
+            .dreamshare{
+                position: absolute;
+                top:46px;
+                left: 248px;
+                margin-top: 0px;
+            }
+        }
     }
 }

@@ -1,6 +1,34 @@
 .step{
-    color: #000;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    
+    border-radius: 4px;
+    color: $white;
+    .card-img-overlay{
+        .bt--step1{
+            margin: 44px 0px 15px;
+        }
+        .step-title{
+            width: 250px;
+            height: 58px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 14px;
+            display: flex;
+            align-items: flex-end;  
+            margin-bottom: 10px;
+        }
+        .step-text{
+            width: 250px;
+            height: 57px;
+            font-family: 'Roboto' , sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            display: flex;
+            align-items: flex-end;
+            color: #E3E3E3;
+        }
+    }
 }
