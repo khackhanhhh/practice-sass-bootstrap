@@ -1,0 +1,90 @@
+.famous{
+    cursor: pointer;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .avata{
+        position: relative;
+        width: 126px;
+        height: 126px;
+        .img_avata{        
+            padding: 3px;
+            border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
+        }
+        .icon_avata{
+            position: absolute;
+            bottom: 3px;
+            right: 3px;            
+            background: $red;
+            padding: 8px;
+            border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
+            border: 3px solid $white;
+            z-index: 100;
+        }
+    }
+    .name{
+        margin-top: 15px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .info{
+        width: 236px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: 'Roboto' , sans-serif;
+        color:$xam;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    }
+}
+.famous--wells{
+    .avata{
+        width: 122px;
+        height: 122px;
+        .img_avata{
+            padding: 1px;
+        }
+        .icon_avata{
+            bottom: 0px;
+            right: 0px;            
+            background: $yeallow;
+        }
+    }
+}
+.famous--bennett{
+    .avata{
+        width: 122px;
+        height: 122px;
+        .img_avata{
+            padding: 1px;
+        }
+        .icon_avata{
+            bottom: 0px;
+            right: 0px;            
+            background: $green;
+        }
+    }
+}
+.famous--Pierce{
+    .avata{
+        width: 121px;
+        height: 121px;
+        .img_avata{
+            padding: 1px;
+        }
+        .icon_avata{
+            bottom: 0px;
+            right: 0px;            
+            background: $violet;
+        }
+    }
+}

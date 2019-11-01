@@ -1,0 +1,65 @@
+.famous_layout{
+    display: block;
+    margin: auto;
+    .title_famous{
+        margin: 0px;
+        margin-top: 26px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 11px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        color: $black;
+    }
+    .famous{
+        margin-bottom: 15px;
+    }
+    .bt--see{
+        display: block;
+        margin: auto;
+        margin-top: 36px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .famous_layout{
+        width: 492px;
+        display: flex;
+        flex-flow: wrap;
+        text-align: center; 
+        .title_famous{
+            margin: auto;
+            margin-top: 84px;
+            margin-bottom: 32px;
+        }
+        .famous{
+            margin-bottom: 34px;
+        }
+        .bt--see{
+            margin-top: 6px;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .famous_layout{
+        width: 940px;
+        text-align: center; 
+        .title_famous{
+            width: 940px;
+            margin: auto;
+            margin-top: 84px;
+            margin-bottom: 32px;
+        }
+        .famous{
+            margin-bottom: 34px;
+            .info{
+                width: 221px;
+                height: 57px;
+            }
+        }
+        .bt--see{
+            margin-top: 6px;
+        }
+    }
+}

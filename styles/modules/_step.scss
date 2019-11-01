@@ -1,34 +1,40 @@
 .step{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    cursor: pointer;
     border-radius: 4px;
     color: $white;
-    .card-img-overlay{
-        .bt--step1{
-            margin: 44px 0px 15px;
+    position: relative;
+    .picture{
+        .step-img {
+            border-radius: 4px;
+            position: absolute;
+            z-index: -1;
         }
-        .step-title{
-            width: 250px;
-            height: 58px;
+    }
+    .overlay{  
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%);
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: flex-start;
+        align-content: flex-end;
+        border-radius: 4px;
+        .bt--step1{
+            margin-bottom: 15px;
+        }
+        .step-title{ 
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
             line-height: 14px;
-            display: flex;
-            align-items: flex-end;  
             margin-bottom: 10px;
         }
         .step-text{
-            width: 250px;
-            height: 57px;
             font-family: 'Roboto' , sans-serif;
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
             line-height: 14px;
-            display: flex;
-            align-items: flex-end;
             color: #E3E3E3;
+            margin-bottom: 0px;
         }
     }
 }

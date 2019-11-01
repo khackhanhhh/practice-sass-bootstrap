@@ -14,6 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding-top: 20px ;
         a{
             margin-right: 19px;
@@ -27,6 +28,7 @@
         align-items: center;
         text-align: center;
         .dreamshare{
+            cursor: pointer;
             font-weight: bold;
             font-size: 20px;
             line-height: 24px;
@@ -73,7 +75,7 @@
             }
         }
         .header_body{
-            margin: 204px;
+            margin-top: 204px;
             .dreamshare{
                 position: absolute;
                 top:46px;
@@ -94,13 +96,12 @@
                 margin-bottom: 33px;
             }
             .bt--header_body{
-                width: 270px;
                 margin-bottom: 224px;
             }
         }
     }
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 767px) {
     .header {
         background-image: url('image/Background-xl.png');
         background-size: cover;
@@ -108,7 +109,7 @@
         background-position: center;
     }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
     .header {
         .header_head{
             position: relative;
